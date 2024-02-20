@@ -6,15 +6,15 @@ using UnityEngine.AI;
 public class PlayerController : MonoBehaviour
 {
     private NavMeshAgent agent;
-    private Camera camera;
-    
+    private Camera mainCamera;
+
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        camera = Camera.main;
+        mainCamera = Camera.main;
     }
 
     // Update is called once per frame
@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            agent.SetDestination(camera.ScreenToWorldPoint(Input.mousePosition));
+            var position = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            agent.SetDestination(position);
         }
     }
 }
