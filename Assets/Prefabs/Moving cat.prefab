@@ -1,5 +1,85 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &956626051943743861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2258579292199526906}
+  - component: {fileID: 540833383168594478}
+  - component: {fileID: 5477767274417923071}
+  m_Layer: 0
+  m_Name: Killing collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2258579292199526906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956626051943743861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1305694486084712803}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &540833383168594478
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956626051943743861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.13853854, y: -0.101594925}
+  serializedVersion: 2
+  m_Radius: 0.42611265
+--- !u!114 &5477767274417923071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956626051943743861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8591a518d3706443b9ce545c5a72eee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3407202606545774649
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,11 +90,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1305694486084712803}
   - component: {fileID: 8495846309301125713}
-  - component: {fileID: 8097020894093054483}
   - component: {fileID: 247135945863749409}
-  - component: {fileID: 4316964113386730674}
+  - component: {fileID: 1873250817000126745}
   m_Layer: 0
-  m_Name: Cats (S3)
+  m_Name: Moving cat
   m_TagString: Cats
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +111,8 @@ Transform:
   m_LocalPosition: {x: -1.93, y: 2.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2258579292199526906}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8495846309301125713
@@ -87,20 +167,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8097020894093054483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3407202606545774649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 026a7f551f18940bb84f71fdb101f36f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  attackSpeed: 0.8
 --- !u!58 &247135945863749409
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -136,7 +202,7 @@ CircleCollider2D:
   m_Offset: {x: 0.09646988, y: -0.115763426}
   serializedVersion: 2
   m_Radius: 2.3957484
---- !u!114 &4316964113386730674
+--- !u!114 &1873250817000126745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,3 +216,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   downY: 3
+  isStartDirectionUp: 0

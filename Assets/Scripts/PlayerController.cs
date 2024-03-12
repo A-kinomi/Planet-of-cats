@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            var position = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 position = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             agent.SetDestination(position);
         }
     }
