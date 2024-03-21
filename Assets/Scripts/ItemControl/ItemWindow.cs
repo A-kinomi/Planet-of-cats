@@ -11,26 +11,15 @@ public class ItemWindow : MonoBehaviour
     public bool hasMilk = false;
     public bool hasHint = false;
 
-    [SerializeField] GameObject shipPart1Window;
-    [SerializeField] GameObject shipPart2Window;
-    [SerializeField] GameObject shipPart3Window;
-    [SerializeField] GameObject shipPart4Window;
-    [SerializeField] GameObject milkWindow;
-    [SerializeField] GameObject hintWindow;
+    public static ItemWindow instance;
 
-    public ItemWindow instance;
-
-    void Start()
+    public void Start()
     {
-        if (instance != null && this != instance)
+        if(instance == null)
         {
-            Destroy(this.gameObject);
-            print("delete");
-            // ToDo This object has to be deleted when going back to Scene2. 
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
-
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
     }
 
 
