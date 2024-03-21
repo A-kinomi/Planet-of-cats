@@ -5,7 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cats
-  - ShipParts
+  - ShipPart1
+  - ShipPart2
+  - ShipPart3
+  - ShipPart4
+  - Milk
+  - Hint
   layers:
   - Default
   - TransparentFX
