@@ -20,7 +20,10 @@ public class DummyTransition : MonoBehaviour
     {
         SceneManager.LoadScene(5);
     }
-
+    public void Scene2to1Button()
+    {
+        SceneManager.LoadScene(1);
+    }
     public void SceneTo2Button()
     {
         SceneManager.LoadScene(2);
