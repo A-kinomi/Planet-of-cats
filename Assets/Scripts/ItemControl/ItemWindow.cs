@@ -18,19 +18,15 @@ public class ItemWindow : MonoBehaviour
     [SerializeField] GameObject milkWindow;
     [SerializeField] GameObject hintWindow;
 
-    public ItemWindow instance;
+    public static ItemWindow instance;
 
-    void Start()
+    public void Start()
     {
-        if (instance != null && this != instance)
+        if(instance == null)
         {
-            Destroy(this.gameObject);
-            print("delete");
-            // ToDo This object has to be deleted when going back to Scene2. 
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
-
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
     }
 
 
