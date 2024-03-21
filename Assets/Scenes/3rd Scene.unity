@@ -180,7 +180,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Go to Scene2
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -503,13 +505,6 @@ MonoBehaviour:
   hasShipPart4: 0
   hasMilk: 0
   hasHint: 0
-  shipPart1Window: {fileID: 2138341822}
-  shipPart2Window: {fileID: 941588712}
-  shipPart3Window: {fileID: 2138341821}
-  shipPart4Window: {fileID: 2138341820}
-  milkWindow: {fileID: 838697769}
-  hintWindow: {fileID: 2138341819}
-  instance: {fileID: 0}
 --- !u!4 &682660308
 Transform:
   m_ObjectHideFlags: 0
@@ -2110,26 +2105,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
---- !u!1 &2138341819 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1284509135358327767, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 2138341818}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2138341820 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2314733258910650957, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 2138341818}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2138341821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5310495469871372815, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 2138341818}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2138341822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6952224616234200586, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 2138341818}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &854886139272630893
 PrefabInstance:
   m_ObjectHideFlags: 0
