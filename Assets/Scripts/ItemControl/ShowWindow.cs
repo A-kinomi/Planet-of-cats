@@ -28,7 +28,7 @@ public class ShowWindow : MonoBehaviour
 
     void SwhichItemWIndow()
     {   
-        if (itemWindow.HasShipPart1() == true)
+        if (itemWindow.hasShipPart1 == true)
         {
             shipPart1Window.SetActive(true);
             if(shipPart.tag == "ShipPart1" && shipPart != null)
@@ -36,7 +36,7 @@ public class ShowWindow : MonoBehaviour
                 shipPart.SetActive(false);
             }
         }
-        if (itemWindow.HasShipPart2() == true)
+        if (itemWindow.hasShipPart2 == true)
         {
             shipPart2Window.SetActive(true);
             if (shipPart.tag == "ShipPart2" && shipPart != null)
@@ -44,7 +44,7 @@ public class ShowWindow : MonoBehaviour
                 shipPart.SetActive(false);
             }
         }
-        if (itemWindow.HasShipPart3() == true)
+        if (itemWindow.hasShipPart3 == true)
         {
             shipPart3Window.SetActive(true);
             if (shipPart.tag == "ShipPart3" && shipPart != null) 
@@ -52,7 +52,7 @@ public class ShowWindow : MonoBehaviour
                 shipPart.SetActive(false);
             }
         }
-        if (itemWindow.HasShipPart4() == true)
+        if (itemWindow.hasShipPart4 == true)
         {
             shipPart4Window.SetActive(true);
             if (shipPart.tag == "ShipPart4" && shipPart != null)
@@ -60,7 +60,7 @@ public class ShowWindow : MonoBehaviour
                 shipPart.SetActive(false);
             }
         }
-        if (itemWindow.HasMilk() == true)
+        if (itemWindow.hasMilk == true)
         {
             milkWindow.SetActive(true);
             if(milk != null)
@@ -68,7 +68,7 @@ public class ShowWindow : MonoBehaviour
                 milk.SetActive(false);
             }
         }
-        if (itemWindow.HasHint() == true)
+        if (itemWindow.hasHint == true)
         {
             hintWindow.SetActive(true);
             if(hint != null)
