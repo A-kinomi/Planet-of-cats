@@ -9,7 +9,10 @@ public class CatKill : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("You got killed!");
+        if(collision.tag == "Player")
+            {
+                print("You got killed!");
+            }
     }
 }
 }
