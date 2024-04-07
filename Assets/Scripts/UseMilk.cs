@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cats;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,15 +8,16 @@ public class UseMilk : MonoBehaviour
 {
     public bool isMilkPut = false;
     ItemWindow itemWindow;
+    ShowWindow showWindow;
     [SerializeField] GameObject useMilkPanel;
     [SerializeField] GameObject shipPart1Button;
     [SerializeField] GameObject shipPart2Button;
     [SerializeField] GameObject wrongItemPanel;
-    [SerializeField] WaitForSeconds timeToShowWrongItemPanel;
 
     void Start()
     {
         itemWindow = FindObjectOfType<ItemWindow>();
+        showWindow = FindObjectOfType<ShowWindow>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,14 +26,15 @@ public class UseMilk : MonoBehaviour
         {
             
             useMilkPanel.SetActive(true);
+            Time.timeScale = 0;
 
-            if(itemWindow.hasShipPart1 == true)
+            if (!itemWindow.hasShipPart1)
             {
-                shipPart1Button.SetActive(true);
+                shipPart1Button.SetActive(false);
             }
-            if (itemWindow.hasShipPart2 == true)
+            if (!itemWindow.hasShipPart2)
             {
-                shipPart2Button.SetActive(true);
+                shipPart2Button.SetActive(false);
             }
 
         }
@@ -39,11 +42,12 @@ public class UseMilk : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && useMilkPanel)
         {
             if (itemWindow.hasMilk)
             {
                 useMilkPanel.SetActive(false);
+                Time.timeScale = 1;
             }
         }
     }
@@ -52,6 +56,9 @@ public class UseMilk : MonoBehaviour
     {
         isMilkPut = true;
         useMilkPanel.SetActive(false);
+        itemWindow.hasMilk = false;
+        showWindow.milkWindow.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void ChooseWrongItem()
@@ -62,8 +69,7 @@ public class UseMilk : MonoBehaviour
     IEnumerator ShowWrongItemPanel()
     {
         wrongItemPanel.SetActive(true);
-
-        yield return timeToShowWrongItemPanel;
+        yield return new WaitForSecondsRealtime(1.3f);
         wrongItemPanel.SetActive(false);
     }
 }

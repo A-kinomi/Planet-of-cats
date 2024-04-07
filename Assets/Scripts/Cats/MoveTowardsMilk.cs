@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveTowardsMilk : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
-    [SerializeField] Transform milk;
+    [SerializeField] Transform milkStand;
     UseMilk useMilk;
 
     private void Start()
@@ -18,7 +18,7 @@ public class MoveTowardsMilk : MonoBehaviour
     {
         if(useMilk.isMilkPut)
         {
-            transform.position = Vector2.MoveTowards(transform.position, milk.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, milkStand.position, speed * Time.deltaTime);
         }
     }
 }
