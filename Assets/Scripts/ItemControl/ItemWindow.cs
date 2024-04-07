@@ -12,39 +12,17 @@ public class ItemWindow : MonoBehaviour
     public bool hasHint = false;
 
     public static ItemWindow instance;
-
-    public void Start()
+    
+    void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(gameObject);
         }
-    }
-
-
-    public bool HasShipPart1()
-    {
-        return hasShipPart1;
-    }
-    public bool HasShipPart2()
-    {
-        return hasShipPart2;
-    }
-    public bool HasShipPart3()
-    {
-        return hasShipPart3;
-    }
-    public bool HasShipPart4()
-    {
-        return hasShipPart4;
-    }
-    public bool HasMilk()
-    {
-        return hasMilk;
-    }
-    public bool HasHint()
-    {
-        return hasHint;
-    }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    } 
 }
