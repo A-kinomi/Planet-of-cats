@@ -256,11 +256,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16436530}
   m_CullTransparentMesh: 1
---- !u!1 &183156153 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2314733258910650957, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 766856882}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &190502200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6952224616234200586, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
@@ -536,13 +531,6 @@ MonoBehaviour:
   hasShipPart4: 0
   hasMilk: 0
   hasHint: 0
-  shipPart1Window: {fileID: 190502200}
-  shipPart2Window: {fileID: 841744771}
-  shipPart3Window: {fileID: 628342159}
-  shipPart4Window: {fileID: 183156153}
-  milkWindow: {fileID: 525269011}
-  hintWindow: {fileID: 1682862274}
-  instance: {fileID: 0}
 --- !u!4 &363037402
 Transform:
   m_ObjectHideFlags: 0
@@ -617,7 +605,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10e1a36541d1e4d168d5e6cc39587bbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 667437494870147e090932f329362a40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -845,11 +833,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &525269011 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1436706324509220959, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 766856882}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &589606331
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,11 +866,6 @@ Transform:
   - {fileID: 1712332677}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &628342159 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5310495469871372815, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 766856882}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &766856882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -989,11 +967,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
---- !u!1 &841744771 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1159345267814855525, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 766856882}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1034952737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,11 +1903,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1682862274 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1284509135358327767, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
-  m_PrefabInstance: {fileID: 766856882}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1712332676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,6 +2514,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: ShipPart1
       objectReference: {fileID: 0}
+    - target: {fileID: 7658974468096492156, guid: 4c26efdc9fb734ef4a3aec14c20cd303, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6661437e729fb425e907929117d5206a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
