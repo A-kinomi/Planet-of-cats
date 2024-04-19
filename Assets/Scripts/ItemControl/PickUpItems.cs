@@ -53,52 +53,52 @@ public class PickUpItems : MonoBehaviour
         }
     }
 
+    void PickUpRoutine()
+    {
+        thisItemWindow.SetActive(true);
+        Destroy(gameObject);
+    }
+
     private IEnumerator ShowShipPart1Window()
     {
         yield return showWindowDuration;
-        thisItemWindow.SetActive(true);
         itemWindow.hasShipPart1 = true;
-        Destroy(gameObject);
+        PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart2Window()
     {
         yield return showWindowDuration;
-        thisItemWindow.SetActive(true);
         itemWindow.hasShipPart2 = true;
-        Destroy(gameObject);
+        PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart3Window()
     {
         yield return showWindowDuration;
-        thisItemWindow.SetActive(true);
         itemWindow.hasShipPart3 = true;
-        Destroy(gameObject);
+        PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart4Window()
     {
         yield return showWindowDuration;
-        thisItemWindow.SetActive(true);
         itemWindow.hasShipPart4 = true;
-        Destroy(gameObject);
+        PickUpRoutine();
     }
 
     private IEnumerator ShowMilkWindow()
     {
         yield return showWindowDuration;
-        thisItemWindow.SetActive(true);
         itemWindow.hasMilk = true;
-        Destroy(gameObject);
+        PickUpRoutine();
     }
 
     private IEnumerator ShowHintWindow()
     {
         yield return showWindowDuration;
-        thisItemWindow.SetActive(true);
         itemWindow.hasHint = true;
-        Destroy(gameObject);
+        PickUpRoutine();
     }
     
 
