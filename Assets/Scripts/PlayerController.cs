@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Camera mainCamera;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -17,9 +18,17 @@ public class PlayerController : MonoBehaviour
         mainCamera = Camera.main;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)ray.origin, (Vector2)ray.direction);
+
+        if(EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && Time.timeScale == 1)
         {
             Vector2 position = mainCamera.ScreenToWorldPoint(Input.mousePosition);
