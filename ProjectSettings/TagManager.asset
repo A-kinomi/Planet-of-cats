@@ -11,11 +11,12 @@ TagManager:
   - ShipPart4
   - Milk
   - Hint
+  - UI
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Cats
   - Water
   - UI
   - 
