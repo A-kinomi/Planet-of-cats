@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 434121609701152536}
   - component: {fileID: 778105669133724691}
   - component: {fileID: 2627343453532631725}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TowardsMilk cat
   m_TagString: Cats
   m_Icon: {fileID: 0}
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   milkStand: {fileID: 0}
+  catBodyCollider: {fileID: 0}
 --- !u!58 &3288081193310088320
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -152,9 +153,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09646928, y: -0.13140166}
+  m_Offset: {x: 0.11038852, y: -0.11748314}
   serializedVersion: 2
-  m_Radius: 1.2228848
+  m_Radius: 1.4734187
 --- !u!70 &4323547665593555382
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -187,8 +188,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16857709, y: -0.10114589}
-  m_Size: {x: 0.9428483, y: 0.6731277}
+  m_Offset: {x: 0.11030429, y: -0.16120581}
+  m_Size: {x: 0.66506916, y: 0.38143948}
   m_Direction: 1
 --- !u!50 &434121609701152536
 Rigidbody2D:
@@ -262,7 +263,7 @@ GameObject:
   - component: {fileID: 8050909854560019776}
   - component: {fileID: 4663430011784369489}
   - component: {fileID: 8958488866638368519}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Killing collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
