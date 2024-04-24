@@ -9,7 +9,7 @@ public class PickUpItems : MonoBehaviour
     [SerializeField] float pickUpDuration = 0.7f;
     private WaitForSeconds showWindowDuration;
     [SerializeField] GameObject thisItemWindow;
-    [SerializeField] ItemType itemType;
+    [SerializeField] ItemTypeEnum itemType;
     ItemWindow itemWindow;
 
 
@@ -26,27 +26,27 @@ public class PickUpItems : MonoBehaviour
         {
             switch (this.itemType)
             {
-                case ItemType.ShipPart1:
+                case ItemTypeEnum.ShipPart1:
                     StartCoroutine(ShowShipPart1Window());
                     break;
 
-                case ItemType.ShipPart2:
+                case ItemTypeEnum.ShipPart2:
                     StartCoroutine(ShowShipPart2Window());
                     break;
 
-                case ItemType.ShipPart3:
+                case ItemTypeEnum.ShipPart3:
                     StartCoroutine(ShowShipPart3Window());
                     break;
 
-                case ItemType.ShipPart4:
+                case ItemTypeEnum.ShipPart4:
                     StartCoroutine(ShowShipPart4Window());
                     break;
 
-                case ItemType.Milk:
+                case ItemTypeEnum.Milk:
                     StartCoroutine(ShowMilkWindow());
                     break;
 
-                case ItemType.Hint:
+                case ItemTypeEnum.Hint:
                     StartCoroutine(ShowHintWindow());
                     break;
             }
