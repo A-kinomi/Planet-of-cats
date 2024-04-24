@@ -32,10 +32,9 @@ public class StationaryCat : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        isMovingToStart = false;
-
         if(collision.tag == "Player")
         {
+            isMovingToStart = false;
             transform.position = Vector2.MoveTowards(transform.position, player.position, attackSpeed * Time.deltaTime);
         }
     }
