@@ -13,7 +13,7 @@ public class MovingCat : MonoBehaviour
     public Transform secondPosition;
 
     private Vector2 targetPosition;
-    private bool isMovingToPlayer = false;
+    public bool isMovingToPlayer = false;
     private bool isMovingToSecondPosition;
 
     private void Start()
@@ -38,10 +38,11 @@ public class MovingCat : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        isMovingToPlayer = true;
+        //isMovingToPlayer = true;
 
         if(collision.tag == "Player")
         {
+            isMovingToPlayer = true;
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
     }
