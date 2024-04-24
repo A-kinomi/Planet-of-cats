@@ -38,8 +38,6 @@ namespace Cats
 
         private void OnTriggerStay2D(Collider2D collision)
         {
-            //isMovingToPlayer = true;
-
             if (collision.tag == "Player")
             {
                 isMovingToPlayer = true;

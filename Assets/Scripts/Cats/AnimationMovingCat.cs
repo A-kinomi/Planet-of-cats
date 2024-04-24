@@ -21,37 +21,29 @@ public class AnimationMovingCat : MonoBehaviour
     {
         currentPos = this.transform.position;
         MoveVertically();
-
+   
         latestPos = this.transform.position;
     }
 
     void MoveVertically()
     {
+        if(!movingCat)
+        {
+            return;
+        }
         if (!movingCat.isMovingToPlayer)
         {
-            if (Mathf.Sign(currentPos.y - latestPos.y) < 0)
+            if (Mathf.Sign(currentPos.y - latestPos.y) < Mathf.Epsilon)
             {
                 catAnimator.SetBool("isMovingForward", true);
                 catAnimator.SetBool("isMovingBack", false);
             }
-            if (Mathf.Sign(currentPos.y - latestPos.y) > 0)
+            if (Mathf.Sign(currentPos.y - latestPos.y) > Mathf.Epsilon)
             {
                 catAnimator.SetBool("isMovingBack", true);
                 catAnimator.SetBool("isMovingForward", false);
             }
         }
-    }
-
-    void MoveForward()
-    {
-        catAnimator.SetBool("isMovingForward", true);
-        catAnimator.SetBool("isMovingBack", false);
-    }
-
-    void MoveBack()
-    {
-        catAnimator.SetBool("isMovingBack", true);
-        catAnimator.SetBool("isMovingForward", false);
     }
 
     void Attacking()

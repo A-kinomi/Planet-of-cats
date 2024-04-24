@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CatsAnimation : MonoBehaviour
+public class AnimationTiming : MonoBehaviour
 {
     [SerializeField] Animator animator;
     void Start()
