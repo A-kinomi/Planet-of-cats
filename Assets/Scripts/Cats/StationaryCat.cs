@@ -11,7 +11,8 @@ namespace Cats
         [SerializeField] private float attackSpeed = 0.8f;
 
         private Vector2 startPosition;
-        private bool isMovingToStart = false;
+        public bool isMovingToStart = false;
+        public bool isMovingToPlayer = false;
 
         private void Start()
         {
@@ -35,6 +36,7 @@ namespace Cats
             if (collision.tag == "Player")
             {
                 isMovingToStart = false;
+                isMovingToPlayer = true;
                 transform.position = Vector2.MoveTowards(transform.position, player.position, attackSpeed * Time.deltaTime);
             }
         }
@@ -44,6 +46,7 @@ namespace Cats
             if (collision.tag == "Player")
             {
                 isMovingToStart = true;
+                isMovingToPlayer = false;
             }
         }
     }

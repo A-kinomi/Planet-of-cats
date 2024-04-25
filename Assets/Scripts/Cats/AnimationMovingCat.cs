@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationMovingCat : MonoBehaviour
+public class AnimationMovingCat : CatAnimation
 {
-    Animator catAnimator;
     Cats.MovingCat movingCat;
     bool catAttacking;
-    Vector2 currentPos;
-    Vector2 latestPos;
+
 
     void Start()
     {
-        catAnimator = GetComponent<Animator>();
         movingCat = GetComponent<Cats.MovingCat>();
     }
 
@@ -20,37 +17,27 @@ public class AnimationMovingCat : MonoBehaviour
     void Update()
     {
         currentPos = this.transform.position;
-        MoveVertically();
-   
+        if (!movingCat.isMovingToPlayer)
+        {
+            MoveVertically();
+        }
+
+        StartAttacking();
         latestPos = this.transform.position;
     }
 
-    void MoveVertically()
-    {
-        if(!movingCat)
-        {
-            return;
-        }
-        if (!movingCat.isMovingToPlayer)
-        {
-            if (Mathf.Sign(currentPos.y - latestPos.y) < Mathf.Epsilon)
-            {
-                catAnimator.SetBool("isMovingForward", true);
-                catAnimator.SetBool("isMovingBack", false);
-            }
-            if (Mathf.Sign(currentPos.y - latestPos.y) > Mathf.Epsilon)
-            {
-                catAnimator.SetBool("isMovingBack", true);
-                catAnimator.SetBool("isMovingForward", false);
-            }
-        }
-    }
+  
 
-    void Attacking()
+    void StartAttacking()
     {
         if (movingCat.isMovingToPlayer)
         {
-            //catAnimator.SetBool("isAttacking", true);
+            Attacking();
+        }
+        else if(!movingCat.isMovingToPlayer)
+        {
+            catAnimator.SetBool("isAttacking", false);
         }
     }
+
 }

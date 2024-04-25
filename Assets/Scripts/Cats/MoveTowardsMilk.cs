@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cats;
 using UnityEngine;
 
 public class MoveTowardsMilk : MonoBehaviour
@@ -8,35 +9,22 @@ public class MoveTowardsMilk : MonoBehaviour
     [SerializeField] Transform milkStand;
     UseMilk useMilk;
     [SerializeField] CapsuleCollider2D catBodyCollider;
+    Cats.StationaryCat stationaryCat;
 
     private void Start()
     {
         useMilk = FindObjectOfType<UseMilk>();
         catBodyCollider = GetComponent<CapsuleCollider2D>();
+        stationaryCat = GetComponent<Cats.StationaryCat>();
     }
 
 
     void Update()
     {
-        if(useMilk.isMilkPut)
+        if(useMilk.isMilkPut && !stationaryCat.isMovingToPlayer)
         {
+            stationaryCat.isMovingToStart = false;
             transform.position = Vector2.MoveTowards(transform.position, milkStand.position, speed * Time.deltaTime);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (catBodyCollider.IsTouchingLayers(LayerMask.GetMask("Cats")) && useMilk.isMilkPut)
-        {
-            speed = 0.1f;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Cats" && useMilk.isMilkPut)
-        {
-            speed = 0.9f;
         }
     }
 }
