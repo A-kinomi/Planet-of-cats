@@ -10,9 +10,11 @@ public class UseMilk : MonoBehaviour
     ItemWindow itemWindow;
     ShowWindow showWindow;
     [SerializeField] GameObject useMilkPanel;
+    [SerializeField] GameObject milkButton;
     [SerializeField] GameObject shipPart1Button;
     [SerializeField] GameObject shipPart2Button;
     [SerializeField] GameObject wrongItemPanel;
+    [SerializeField] GameObject youDontHaveItemsPanel;
 
     void Start()
     {
@@ -22,7 +24,7 @@ public class UseMilk : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player" && itemWindow.hasMilk)
+        if (collision.tag == "Player")
         {
             
             useMilkPanel.SetActive(true);
@@ -35,6 +37,14 @@ public class UseMilk : MonoBehaviour
             if (!itemWindow.hasShipPart2)
             {
                 shipPart2Button.SetActive(false);
+            }
+            if (!itemWindow.hasMilk)
+            {
+                milkButton.SetActive(false);
+            }
+            if (!itemWindow.hasShipPart1 && !itemWindow.hasShipPart2 && !itemWindow.hasMilk)
+            {
+                StartCoroutine(YouDontHaveItems());
             }
 
         }
@@ -71,5 +81,13 @@ public class UseMilk : MonoBehaviour
         wrongItemPanel.SetActive(true);
         yield return new WaitForSecondsRealtime(1.3f);
         wrongItemPanel.SetActive(false);
+    }
+    IEnumerator YouDontHaveItems()
+    {
+        youDontHaveItemsPanel.SetActive(true);
+        yield return new WaitForSecondsRealtime(2f);
+        youDontHaveItemsPanel.SetActive(false);
+        useMilkPanel.SetActive(false);
+        Time.timeScale = 1;
     }
 }

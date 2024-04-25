@@ -92,6 +92,8 @@ GameObject:
   - component: {fileID: 8495846309301125713}
   - component: {fileID: 247135945863749409}
   - component: {fileID: 1873250817000126745}
+  - component: {fileID: 2559283171553307573}
+  - component: {fileID: 2672677842258186604}
   m_Layer: 0
   m_Name: Moving cat
   m_TagString: Cats
@@ -214,6 +216,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483a6b4f093354dcfa22c5a0ae88f898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   speed: 1
-  downY: 3
-  isStartDirectionUp: 0
+  secondPosition: {fileID: 0}
+  isMovingToPlayer: 0
+--- !u!95 &2559283171553307573
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3407202606545774649}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c96f15a47914748e28cde1695ce28c1a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2672677842258186604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3407202606545774649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d79c71ff8f2488cbb8746a3172e0af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
