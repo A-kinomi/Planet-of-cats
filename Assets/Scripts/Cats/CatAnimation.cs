@@ -52,8 +52,6 @@ public class CatAnimation : MonoBehaviour
 
     public void LoveMilk()
     {
-        //if (!useMilk) { return; }
-
         if(useMilk && useMilk.isMilkPut)
         {
             catAnimator.SetBool("isMilkUsed", true);

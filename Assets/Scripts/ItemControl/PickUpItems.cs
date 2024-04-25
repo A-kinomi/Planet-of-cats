@@ -10,14 +10,11 @@ public class PickUpItems : MonoBehaviour
     private WaitForSeconds showWindowDuration;
     [SerializeField] GameObject thisItemWindow;
     [SerializeField] ItemTypeEnum itemType;
-    ItemWindow itemWindow;
 
 
     private void Start()
     {
         showWindowDuration = new WaitForSeconds(pickUpDuration);
-        itemWindow = FindObjectOfType<ItemWindow>();
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,42 +59,42 @@ public class PickUpItems : MonoBehaviour
     private IEnumerator ShowShipPart1Window()
     {
         yield return showWindowDuration;
-        itemWindow.hasShipPart1 = true;
+        ItemWindow.instance.hasShipPart1 = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart2Window()
     {
         yield return showWindowDuration;
-        itemWindow.hasShipPart2 = true;
+        ItemWindow.instance.hasShipPart2 = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart3Window()
     {
         yield return showWindowDuration;
-        itemWindow.hasShipPart3 = true;
+        ItemWindow.instance.hasShipPart3 = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart4Window()
     {
         yield return showWindowDuration;
-        itemWindow.hasShipPart4 = true;
+        ItemWindow.instance.hasShipPart4 = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowMilkWindow()
     {
         yield return showWindowDuration;
-        itemWindow.hasMilk = true;
+        ItemWindow.instance.hasMilk = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowHintWindow()
     {
         yield return showWindowDuration;
-        itemWindow.hasHint = true;
+        ItemWindow.instance.hasHint = true;
         PickUpRoutine();
     }
     
