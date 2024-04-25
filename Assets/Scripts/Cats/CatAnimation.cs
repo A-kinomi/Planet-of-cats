@@ -32,14 +32,12 @@ public class CatAnimation : MonoBehaviour
 
     public void MoveVertically()
     {
-        if (!useMilk) { return; }
-
-        if (Mathf.Sign(currentPos.y - latestPos.y) < Mathf.Epsilon && !useMilk.isMilkPut)
+        if (Mathf.Sign(currentPos.y - latestPos.y) < Mathf.Epsilon)
         {
             catAnimator.SetBool("isMovingForward", true);
             catAnimator.SetBool("isMovingBack", false);
         }
-        if (Mathf.Sign(currentPos.y - latestPos.y) > Mathf.Epsilon && !useMilk.isMilkPut)
+        if (Mathf.Sign(currentPos.y - latestPos.y) > Mathf.Epsilon)
         {
             catAnimator.SetBool("isMovingBack", true);
             catAnimator.SetBool("isMovingForward", false);
@@ -54,11 +52,10 @@ public class CatAnimation : MonoBehaviour
 
     public void LoveMilk()
     {
-        if (!useMilk) { return; }
-
-        else if(useMilk.isMilkPut)
+        if(useMilk && useMilk.isMilkPut)
         {
             catAnimator.SetBool("isMilkUsed", true);
+            transform.localScale = new Vector2(1f, 1f);
         }
     }
 }

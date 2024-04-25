@@ -6,11 +6,13 @@ using UnityEngine;
 public class AnimationStationaryCat : CatAnimation
 {
     Cats.StationaryCat stationaryCat;
+    UseMilk useMilk;
     bool catAttacking;
 
     void Start()
     {
         stationaryCat = GetComponent<Cats.StationaryCat>();
+        useMilk = FindObjectOfType<UseMilk>();
         catAnimator.Play(catAnimator.GetCurrentAnimatorStateInfo(0).shortNameHash, 0, Random.Range(0f, 1f));
     }
 
