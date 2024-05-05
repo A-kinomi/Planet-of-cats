@@ -5,14 +5,22 @@ using UnityEngine;
 
 namespace Cats
 {
-public class CatKill : MonoBehaviour
-{
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class CatKill : MonoBehaviour
     {
-        if(collision.tag == "Player")
+        PlayerAnimation playerAnimation;
+
+        private void Start()
+        {
+             playerAnimation = FindObjectOfType<PlayerAnimation>();
+        }
+
+        public void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.tag == "Player")
             {
                 print("You got killed!");
+                playerAnimation.isKilled = true;
             }
+        }
     }
-}
 }
