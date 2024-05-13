@@ -52,7 +52,7 @@ public class CatAnimation : MonoBehaviour
 
     public void LoveMilk()
     {
-        if(useMilk && useMilk.isMilkPut)
+        if (useMilk && useMilk.isMilkPut)
         {
             catAnimator.SetBool("isMilkUsed", true);
             transform.localScale = new Vector2(1f, 1f);
