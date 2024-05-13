@@ -10,8 +10,11 @@ public class UseMilk : MonoBehaviour
     ShowWindow showWindow;
     [SerializeField] GameObject useMilkPanel;
     [SerializeField] GameObject milkButton;
+    [SerializeField] GameObject hintButton;
     [SerializeField] GameObject shipPart1Button;
     [SerializeField] GameObject shipPart2Button;
+    [SerializeField] GameObject shipPart3Button;
+    [SerializeField] GameObject shipPart4Button;
     [SerializeField] GameObject wrongItemPanel;
     [SerializeField] GameObject youDontHaveItemsPanel;
 
@@ -36,11 +39,23 @@ public class UseMilk : MonoBehaviour
             {
                 shipPart2Button.SetActive(false);
             }
+            if (!ItemWindow.instance.hasShipPart3)
+            {
+                shipPart3Button.SetActive(false);
+            }
+            if (!ItemWindow.instance.hasShipPart4)
+            {
+                shipPart4Button.SetActive(false);
+            }
             if (!ItemWindow.instance.hasMilk)
             {
                 milkButton.SetActive(false);
             }
-            if (!ItemWindow.instance.hasShipPart1 && !ItemWindow.instance.hasShipPart2 && !ItemWindow.instance.hasMilk)
+            if (!ItemWindow.instance.hasHint)
+            {
+                hintButton.SetActive(false);
+            }
+            if (!ItemWindow.instance.hasShipPart1 && !ItemWindow.instance.hasShipPart2 && !ItemWindow.instance.hasMilk && !ItemWindow.instance.hasHint)
             {
                 StartCoroutine(YouDontHaveItems());
             }

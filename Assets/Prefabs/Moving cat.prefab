@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &227879945604293897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 317820235148332266}
+  m_Layer: 0
+  m_Name: Cat 1 target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &317820235148332266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227879945604293897}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1305694486084712803}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956626051943743861
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,6 +146,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2258579292199526906}
+  - {fileID: 317820235148332266}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8495846309301125713
@@ -201,9 +233,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09646988, y: -0.115763426}
+  m_Offset: {x: 0.08113146, y: -0.14643955}
   serializedVersion: 2
-  m_Radius: 2.3957484
+  m_Radius: 2.1656733
 --- !u!114 &1873250817000126745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speed: 1
-  secondPosition: {fileID: 0}
+  secondPosition: {fileID: 317820235148332266}
   isMovingToPlayer: 0
 --- !u!95 &2559283171553307573
 Animator:
@@ -253,3 +285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d79c71ff8f2488cbb8746a3172e0af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  catAnimator: {fileID: 0}
+  currentPos: {x: 0, y: 0}
+  latestPos: {x: 0, y: 0}

@@ -9,7 +9,7 @@ public class ShowWindow : MonoBehaviour
     [SerializeField] GameObject shipPart3Window;
     [SerializeField] GameObject shipPart4Window;
     public GameObject milkWindow;
-    [SerializeField] GameObject hintWindow;
+    public GameObject hintWindow;
 
     ItemWindow itemWindow;
 

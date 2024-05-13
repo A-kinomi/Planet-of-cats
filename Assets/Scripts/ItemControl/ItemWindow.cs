@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemWindow : MonoBehaviour
+public class ItemWindow : MonoBehaviour //ItemInventory?
 {
     public bool hasShipPart1 = false;
     public bool hasShipPart2 = false;
