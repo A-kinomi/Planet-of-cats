@@ -12,6 +12,7 @@ namespace Cats
         private void Start()
         {
              playerAnimation = FindObjectOfType<PlayerAnimation>();
+
         }
 
         public void OnTriggerEnter2D(Collider2D collision)
