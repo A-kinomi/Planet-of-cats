@@ -551,6 +551,10 @@ PrefabInstance:
       propertyPath: isStartDirectionUp
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5477767274417923071, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 2138341819}
     - target: {fileID: 8097020894093054483, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
       propertyPath: player
       value: 
@@ -639,6 +643,10 @@ PrefabInstance:
       propertyPath: isStartDirectionUp
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5477767274417923071, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 2138341819}
     - target: {fileID: 8097020894093054483, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
       propertyPath: player
       value: 
@@ -1013,6 +1021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving cat 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5477767274417923071, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 2138341819}
     - target: {fileID: 8097020894093054483, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
       propertyPath: player
       value: 
@@ -1713,6 +1725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving cat 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5477767274417923071, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 2138341819}
     - target: {fileID: 8097020894093054483, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
       propertyPath: player
       value: 
@@ -1797,6 +1813,10 @@ PrefabInstance:
       propertyPath: isStartDirectionUp
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5477767274417923071, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 2138341819}
     - target: {fileID: 8097020894093054483, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
       propertyPath: player
       value: 
@@ -2732,6 +2752,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
+--- !u!114 &2138341819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2105335471028953283, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
+  m_PrefabInstance: {fileID: 2138341818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &854886139272630893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2788,6 +2819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving cat 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5477767274417923071, guid: 467bc0b974c05431aa63eec5b2778306, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 2138341819}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

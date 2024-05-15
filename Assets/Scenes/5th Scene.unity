@@ -255,6 +255,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2123307975}
+    - target: {fileID: 2364795597286591767, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 384656929}
     - target: {fileID: 2628886312496069703, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
       propertyPath: m_Name
       value: Ghost cat (2)
@@ -553,6 +557,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2314733258910650957, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
   m_PrefabInstance: {fileID: 384656927}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &384656929 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2105335471028953283, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
+  m_PrefabInstance: {fileID: 384656927}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &385832241
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +758,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2123307975}
+    - target: {fileID: 2364795597286591767, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 384656929}
     - target: {fileID: 2628886312496069703, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
       propertyPath: m_Name
       value: Ghost cat (1)
@@ -2250,6 +2269,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2123307975}
+    - target: {fileID: 2364795597286591767, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 384656929}
     - target: {fileID: 2628886312496069703, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
       propertyPath: m_Name
       value: Ghost cat (3)
@@ -3903,6 +3926,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2123307975}
+    - target: {fileID: 2364795597286591767, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 384656929}
     - target: {fileID: 2628886312496069703, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
       propertyPath: m_Name
       value: Ghost cat
