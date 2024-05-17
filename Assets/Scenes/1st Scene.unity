@@ -492,6 +492,8 @@ GameObject:
   - component: {fileID: 400959299}
   - component: {fileID: 400959298}
   - component: {fileID: 400959300}
+  - component: {fileID: 400959302}
+  - component: {fileID: 400959301}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -565,7 +567,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 712735993}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1352363233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.639}
 --- !u!70 &400959300
 CapsuleCollider2D:
@@ -601,6 +603,55 @@ CapsuleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.101075515, y: -0.23085825}
   m_Size: {x: 2.2722173, y: 0.9593753}
+  m_Direction: 1
+--- !u!114 &400959301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400959297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ce2c9eb4328489a80cbd7248d7bcc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixedShipSprite: {fileID: 21300000, guid: 5af73f0352e474de080ffc971a1f2009, type: 3}
+  blackPanel: {fileID: 1365934673}
+--- !u!70 &400959302
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400959297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.11779689, y: -0.1812967}
+  m_Size: {x: 2.819119, y: 1.4558195}
   m_Direction: 1
 --- !u!1 &503900097
 GameObject:
@@ -1655,8 +1706,20 @@ Transform:
   m_Children:
   - {fileID: 381992518}
   - {fileID: 1346926451}
+  - {fileID: 400959299}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1365934673 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2105335471028953283, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
+  m_PrefabInstance: {fileID: 979941071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1931229371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,4 +1864,3 @@ SceneRoots:
   - {fileID: 666884959}
   - {fileID: 1299734622}
   - {fileID: 1931229374}
-  - {fileID: 400959299}

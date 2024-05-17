@@ -183,6 +183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -463,6 +467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -766,6 +774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1121,6 +1133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1264,6 +1280,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5310495469871372815, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
   m_PrefabInstance: {fileID: 350213061}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &350213063 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2105335471028953283, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
+  m_PrefabInstance: {fileID: 350213061}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &371540598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1324,6 +1351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1514,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1584,6 +1619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2157,12 +2196,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791693589}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.98, y: 0.6745, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 932914459}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &791693592
 BoxCollider2D:
@@ -2307,6 +2346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2482,6 +2525,7 @@ Transform:
   - {fileID: 1923808950}
   - {fileID: 713077530}
   - {fileID: 1073743428}
+  - {fileID: 791693591}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &981627783
@@ -3425,6 +3469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4255,6 +4303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4325,6 +4377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4791,6 +4847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4861,6 +4921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowardsMilk cat
       objectReference: {fileID: 0}
+    - target: {fileID: 8958488866638368519, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: blackPanel
+      value: 
+      objectReference: {fileID: 350213063}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4877,6 +4941,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1380411809}
   - {fileID: 2060644013}
+  - {fileID: 508778767}
   - {fileID: 1289504937}
   - {fileID: 1965036626}
   - {fileID: 350213061}
@@ -4884,7 +4949,5 @@ SceneRoots:
   - {fileID: 632785100}
   - {fileID: 1754349371}
   - {fileID: 932914459}
-  - {fileID: 508778767}
-  - {fileID: 791693591}
   - {fileID: 1392073619}
   - {fileID: 740039109}
