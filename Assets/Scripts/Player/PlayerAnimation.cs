@@ -12,6 +12,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         playerAnimatior = GetComponent<Animator>();
         playerAnimatior.SetBool("isStart", false);
+        playerAnimatior.SetBool("isMoving", false);
         isKilled = false;
     }
 

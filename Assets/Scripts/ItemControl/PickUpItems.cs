@@ -97,6 +97,4 @@ public class PickUpItems : MonoBehaviour
         ItemInventory.instance.hasHint = true;
         PickUpRoutine();
     }
-    
-
 }
