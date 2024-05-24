@@ -23,10 +23,10 @@ public class WinCondition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (ItemWindow.instance.hasShipPart1 == true
-            && ItemWindow.instance.hasShipPart2 == true
-            && ItemWindow.instance.hasShipPart3 == true
-            && ItemWindow.instance.hasShipPart4 == true)
+        if (ItemInventory.instance.hasShipPart1 == true
+            && ItemInventory.instance.hasShipPart2 == true
+            && ItemInventory.instance.hasShipPart3 == true
+            && ItemInventory.instance.hasShipPart4 == true)
         {
             isBlackScreen = true;
             blackPanel.enabled = true;

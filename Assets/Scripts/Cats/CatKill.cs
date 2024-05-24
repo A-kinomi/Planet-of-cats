@@ -35,6 +35,7 @@ namespace Cats
             if (collision.tag == "Player")
             {
                 playerAnimation.isKilled = true;
+                ItemInventory.instance.wasKilled = true;
                 blackPanel.enabled = true;
                 StartCoroutine(Killed());
             }

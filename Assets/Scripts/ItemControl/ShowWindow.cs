@@ -11,7 +11,7 @@ public class ShowWindow : MonoBehaviour
     public GameObject milkWindow;
     public GameObject hintWindow;
 
-    ItemWindow itemWindow;
+    ItemInventory itemWindow;
 
     PickUpItems pickUpItems;
     [SerializeField] GameObject shipPart;
@@ -20,7 +20,7 @@ public class ShowWindow : MonoBehaviour
 
     void Start()
     {
-        itemWindow = FindObjectOfType<ItemWindow>();
+        itemWindow = FindObjectOfType<ItemInventory>();
         SwhichItemWIndow();
 
         shipPart = GameObject.Find("ShipParts");

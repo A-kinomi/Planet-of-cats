@@ -31,31 +31,31 @@ public class UseMilk : MonoBehaviour
             useMilkPanel.SetActive(true);
             Time.timeScale = 0;
 
-            if (!ItemWindow.instance.hasShipPart1)
+            if (!ItemInventory.instance.hasShipPart1)
             {
                 shipPart1Button.SetActive(false);
             }
-            if (!ItemWindow.instance.hasShipPart2)
+            if (!ItemInventory.instance.hasShipPart2)
             {
                 shipPart2Button.SetActive(false);
             }
-            if (!ItemWindow.instance.hasShipPart3)
+            if (!ItemInventory.instance.hasShipPart3)
             {
                 shipPart3Button.SetActive(false);
             }
-            if (!ItemWindow.instance.hasShipPart4)
+            if (!ItemInventory.instance.hasShipPart4)
             {
                 shipPart4Button.SetActive(false);
             }
-            if (!ItemWindow.instance.hasMilk)
+            if (!ItemInventory.instance.hasMilk)
             {
                 milkButton.SetActive(false);
             }
-            if (!ItemWindow.instance.hasHint)
+            if (!ItemInventory.instance.hasHint)
             {
                 hintButton.SetActive(false);
             }
-            if (!ItemWindow.instance.hasShipPart1 && !ItemWindow.instance.hasShipPart2 && !ItemWindow.instance.hasMilk && !ItemWindow.instance.hasHint)
+            if (!ItemInventory.instance.hasShipPart1 && !ItemInventory.instance.hasShipPart2 && !ItemInventory.instance.hasMilk && !ItemInventory.instance.hasHint)
             {
                 StartCoroutine(YouDontHaveItems());
             }
@@ -67,7 +67,7 @@ public class UseMilk : MonoBehaviour
     {
         if (collision.tag == "Player" && useMilkPanel)
         {
-            if (ItemWindow.instance.hasMilk)
+            if (ItemInventory.instance.hasMilk)
             {
                 useMilkPanel.SetActive(false);
                 Time.timeScale = 1;
@@ -79,7 +79,7 @@ public class UseMilk : MonoBehaviour
     {
         isMilkPut = true;
         useMilkPanel.SetActive(false);
-        ItemWindow.instance.hasMilk = false;
+        ItemInventory.instance.hasMilk = false;
         showWindow.milkWindow.SetActive(false);
         Time.timeScale = 1;
     }
@@ -95,7 +95,7 @@ public class UseMilk : MonoBehaviour
         yield return new WaitForSecondsRealtime(1.3f);
         wrongItemPanel.SetActive(false);
 
-        if (!ItemWindow.instance.hasMilk)
+        if (!ItemInventory.instance.hasMilk)
         {
             useMilkPanel.SetActive(false);
             Time.timeScale = 1;
