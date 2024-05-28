@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     GameObject player;
+    PlayerAnimation playerAnimation;
 
     private void Start()
     {
         player = GameObject.Find("Player");
+        if(player)
+        {
+            playerAnimation = player.GetComponent<PlayerAnimation>();
+        }
     }
 
     public void StartButton()
@@ -19,7 +24,7 @@ public class SceneTransition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && !playerAnimation.isKilled)
         {
             if (this.tag == "Scene1to2")
             {
