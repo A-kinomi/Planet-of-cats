@@ -1426,7 +1426,7 @@ MonoBehaviour:
   - 'Some ship parts are scattered because of the impact. '
   - I have to find them to repair my ship and go back to my home planet.
   monologueText: {fileID: 1561022671}
-  telopSpeed: 0
+  telopSpeed: 0.07
 --- !u!1 &1867874383
 GameObject:
   m_ObjectHideFlags: 0
