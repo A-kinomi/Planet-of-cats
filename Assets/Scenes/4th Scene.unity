@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
       value: 
@@ -466,6 +470,14 @@ PrefabInstance:
     - target: {fileID: 5376547336020983117, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9718c2ad778e0459ba29475282efee97, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
@@ -777,6 +789,10 @@ PrefabInstance:
     - target: {fileID: 5376547336020983117, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
@@ -1147,6 +1163,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 00fd3659daf2b43aebd795b8e669e267, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
       value: 
@@ -1177,6 +1201,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1436706324509220959, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3590400791016563842, guid: 1978ded24981944dabfce3d5eb08b656, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1345,6 +1373,14 @@ PrefabInstance:
     - target: {fileID: 5376547336020983117, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a0389a309cb704ed3ab7e36b78fe84c3, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
@@ -1634,6 +1670,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9718c2ad778e0459ba29475282efee97, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
       value: 
@@ -1711,6 +1755,14 @@ PrefabInstance:
     - target: {fileID: 5376547336020983117, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e68a510f92d840aeb5154b162082628, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
@@ -2279,6 +2331,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e731ebcb228184d919194c58679442d1, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
       value: 
@@ -2806,7 +2866,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 2467c672a727c4e5dbb5714df949eaa8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3084,6 +3144,14 @@ PrefabInstance:
     - target: {fileID: 5376547336020983117, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e68a510f92d840aeb5154b162082628, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
@@ -3923,6 +3991,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9718c2ad778e0459ba29475282efee97, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
       value: 
@@ -4000,6 +4076,14 @@ PrefabInstance:
     - target: {fileID: 5376547336020983117, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e731ebcb228184d919194c58679442d1, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
@@ -4491,6 +4575,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 00fd3659daf2b43aebd795b8e669e267, type: 3}
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand
       value: 
@@ -4565,9 +4657,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5376547336020983117, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
+    - target: {fileID: 5700065016298158090, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377162673712604078, guid: 9603124aee2684c568fd5a35b3c43aae, type: 3}
       propertyPath: milkStand

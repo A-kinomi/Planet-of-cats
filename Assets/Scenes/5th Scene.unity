@@ -207,6 +207,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1348581914}
     m_Modifications:
+    - target: {fileID: 1400112578144969852, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d4181a1632268475bb5954aef6a1cd56, type: 3}
+    - target: {fileID: 1400112578144969852, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1748860888770747225, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2453631
@@ -711,6 +719,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1348581914}
     m_Modifications:
+    - target: {fileID: 1400112578144969852, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e68a510f92d840aeb5154b162082628, type: 3}
+    - target: {fileID: 1400112578144969852, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1748860888770747225, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.885363
@@ -2069,6 +2085,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1348581914}
     m_Modifications:
+    - target: {fileID: 1400112578144969852, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e731ebcb228184d919194c58679442d1, type: 3}
+    - target: {fileID: 1400112578144969852, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1748860888770747225, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.085363
@@ -3597,6 +3621,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1348581914}
     m_Modifications:
+    - target: {fileID: 1400112578144969852, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1748860888770747225, guid: 21836da4b8e8243d6b3f593ec1740885, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.44536313

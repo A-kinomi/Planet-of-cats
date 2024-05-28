@@ -599,10 +599,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2030062953}
-    - target: {fileID: 3602570426929604870, guid: db67729d5237e42dfbebb4dc53dcfef9, type: 3}
-      propertyPath: catAnimator
-      value: 
-      objectReference: {fileID: 1410101002}
     - target: {fileID: 5337507390023660160, guid: db67729d5237e42dfbebb4dc53dcfef9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.82
@@ -642,18 +638,6 @@ PrefabInstance:
     - target: {fileID: 5337507390023660160, guid: db67729d5237e42dfbebb4dc53dcfef9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8140865906019557631, guid: db67729d5237e42dfbebb4dc53dcfef9, type: 3}
-      propertyPath: m_Radius
-      value: 1.7515371
-      objectReference: {fileID: 0}
-    - target: {fileID: 8140865906019557631, guid: db67729d5237e42dfbebb4dc53dcfef9, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.06579304
-      objectReference: {fileID: 0}
-    - target: {fileID: 8140865906019557631, guid: db67729d5237e42dfbebb4dc53dcfef9, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.085086584
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1298,11 +1282,6 @@ BoxCollider2D:
 --- !u!1 &1410101000 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2532175209031707924, guid: db67729d5237e42dfbebb4dc53dcfef9, type: 3}
-  m_PrefabInstance: {fileID: 390037207}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1410101002 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1542665277944590532, guid: db67729d5237e42dfbebb4dc53dcfef9, type: 3}
   m_PrefabInstance: {fileID: 390037207}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1520279006
