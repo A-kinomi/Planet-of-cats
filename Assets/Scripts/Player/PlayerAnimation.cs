@@ -7,6 +7,7 @@ public class PlayerAnimation : MonoBehaviour
     private Animator playerAnimatior;
     private Vector2 mousePosition;
     public bool isKilled = false;
+    private AudioSource playerRunSound;
 
     void Start()
     {
@@ -14,6 +15,7 @@ public class PlayerAnimation : MonoBehaviour
         playerAnimatior.SetBool("isStart", false);
         playerAnimatior.SetBool("isMoving", false);
         isKilled = false;
+        playerRunSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -22,6 +24,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             playerAnimatior.SetBool("isStart", true);
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            playerRunSound.Play();
         }
 
         FlipSprite();
@@ -74,6 +77,7 @@ public class PlayerAnimation : MonoBehaviour
         if((Vector2)mousePosition == (Vector2)transform.position )
         {
             playerAnimatior.SetBool("isMoving", false);
+            playerRunSound.Stop();
         }
     }
 
@@ -82,6 +86,7 @@ public class PlayerAnimation : MonoBehaviour
         if(isKilled == true)
         {
             playerAnimatior.SetBool("isKilled", true);
+            playerRunSound.Stop();
         }
     }
 }
