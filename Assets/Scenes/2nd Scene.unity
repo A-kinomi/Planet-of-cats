@@ -280,8 +280,8 @@ Transform:
   m_GameObject: {fileID: 207596109}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.1124, y: 4.3409, z: 0}
-  m_LocalScale: {x: 4.826484, y: 1.9183017, z: 1}
+  m_LocalPosition: {x: 6.3892, y: 4.207, z: 0}
+  m_LocalScale: {x: 6.2730737, y: 2.1862798, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1712332677}
@@ -994,8 +994,8 @@ Transform:
   m_GameObject: {fileID: 1034952737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.1104, y: -4.49, z: 0}
-  m_LocalScale: {x: 5.030369, y: 1.7143, z: 1}
+  m_LocalPosition: {x: 6.5747, y: -4.4096, z: 0}
+  m_LocalScale: {x: 6.101893, y: 1.8751732, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1712332677}
@@ -1332,8 +1332,8 @@ Transform:
   m_GameObject: {fileID: 1520279006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.15, y: 4.4429, z: 0}
-  m_LocalScale: {x: 4.5714, y: 1.7143, z: 1}
+  m_LocalPosition: {x: -6.2928, y: 4.2019, z: 0}
+  m_LocalScale: {x: 6.285798, y: 2.1963704, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1712332677}
@@ -1647,8 +1647,8 @@ Transform:
   m_GameObject: {fileID: 1957857415}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.0714, y: -4.49, z: 0}
-  m_LocalScale: {x: 4.9284263, y: 1.7143, z: 1}
+  m_LocalPosition: {x: -6.6161, y: -4.3025, z: 0}
+  m_LocalScale: {x: 5.8391504, y: 2.089279, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1712332677}
@@ -1738,8 +1738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8783a5e7503354187bb2c3c85c3e6147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSide: {fileID: 21300000, guid: 4ce04b56fdc4649249c9deb35d7754f9, type: 3}
-  spriteDown: {fileID: 21300000, guid: e67a725cf355f4f85b424304fba7d205, type: 3}
 --- !u!1001 &8951635251408783451
 PrefabInstance:
   m_ObjectHideFlags: 0
