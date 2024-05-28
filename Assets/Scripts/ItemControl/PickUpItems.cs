@@ -19,7 +19,7 @@ public class PickUpItems : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && !ItemInventory.instance.wasKilled)
         {
             switch (this.itemType)
             {
@@ -59,44 +59,42 @@ public class PickUpItems : MonoBehaviour
     private IEnumerator ShowShipPart1Window()
     {
         yield return showWindowDuration;
-        ItemWindow.instance.hasShipPart1 = true;
+        ItemInventory.instance.hasShipPart1 = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart2Window()
     {
         yield return showWindowDuration;
-        ItemWindow.instance.hasShipPart2 = true;
+        ItemInventory.instance.hasShipPart2 = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart3Window()
     {
         yield return showWindowDuration;
-        ItemWindow.instance.hasShipPart3 = true;
+        ItemInventory.instance.hasShipPart3 = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowShipPart4Window()
     {
         yield return showWindowDuration;
-        ItemWindow.instance.hasShipPart4 = true;
+        ItemInventory.instance.hasShipPart4 = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowMilkWindow()
     {
         yield return showWindowDuration;
-        ItemWindow.instance.hasMilk = true;
+        ItemInventory.instance.hasMilk = true;
         PickUpRoutine();
     }
 
     private IEnumerator ShowHintWindow()
     {
         yield return showWindowDuration;
-        ItemWindow.instance.hasHint = true;
+        ItemInventory.instance.hasHint = true;
         PickUpRoutine();
     }
-    
-
 }

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 379596361006841b7a744f81ba3de188
+  - enabled: 1
+    path: Assets/Scenes/Crash.unity
+    guid: 43b7c37278c2c4b77962e7a7390d0ab0
   m_configObjects: {}

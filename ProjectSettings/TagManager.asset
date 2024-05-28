@@ -12,6 +12,15 @@ TagManager:
   - Milk
   - Hint
   - UI
+  - Scene1
+  - Scene2to3
+  - Scene2to4
+  - Scene2to5
+  - Scene2to1
+  - Scene3to2
+  - Scene4to2
+  - Scene5to2
+  - Scene1to2
   layers:
   - Default
   - TransparentFX

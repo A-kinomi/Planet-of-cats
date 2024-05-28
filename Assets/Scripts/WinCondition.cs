@@ -9,7 +9,14 @@ public class WinCondition : MonoBehaviour
     [SerializeField] Sprite fixedShipSprite;
     [SerializeField] Image blackPanel;
     private float alpha = 0f;
-    bool isBlackScreen;
+    public bool isBlackScreen;
+    AudioSource bgmAudio;
+    float bgmVolume;
+
+    private void Start()
+    {
+        bgmAudio = GameObject.Find("BGM").GetComponent<AudioSource>();
+    }
 
 
     private void Update()
@@ -23,10 +30,10 @@ public class WinCondition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (ItemWindow.instance.hasShipPart1 == true
-            && ItemWindow.instance.hasShipPart2 == true
-            && ItemWindow.instance.hasShipPart3 == true
-            && ItemWindow.instance.hasShipPart4 == true)
+        if (ItemInventory.instance.hasShipPart1 == true
+            && ItemInventory.instance.hasShipPart2 == true
+            && ItemInventory.instance.hasShipPart3 == true
+            && ItemInventory.instance.hasShipPart4 == true)
         {
             isBlackScreen = true;
             blackPanel.enabled = true;
@@ -39,6 +46,7 @@ public class WinCondition : MonoBehaviour
         {
             alpha += 0.001f;
             blackPanel.color = new Color(0f, 0f, 0f, alpha);
+            bgmAudio.volume -= 0.001f;
         }
 
         if(alpha > 1.0f && isBlackScreen)

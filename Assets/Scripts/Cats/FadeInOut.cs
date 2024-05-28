@@ -28,7 +28,6 @@ public class FadeInOut : MonoBehaviour
             {
                 alphaValue = 1 - (currentFadeTime / fadeDuration);
                 material.color = new Color(1.0f, 1.0f, 1.0f, alphaValue);
-                currentFadeTime += Time.deltaTime;
             }
             else
             {

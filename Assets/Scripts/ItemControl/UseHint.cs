@@ -35,7 +35,7 @@ public class UseHint : MonoBehaviour
 
     public void YesButton()
     {
-        if(ItemWindow.instance.hasHint == false)
+        if(ItemInventory.instance.hasHint == false)
         {
             StartCoroutine(YouDontHaveItems());
         }

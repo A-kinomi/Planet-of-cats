@@ -10,12 +10,14 @@ public class CatAnimation : MonoBehaviour
     public Vector2 latestPos;
     UseMilk useMilk;
     GameObject player;
+    public AudioSource catVoiceSound;
 
     private void Awake()
     {
         catAnimator = GetComponent<Animator>();
         useMilk = FindObjectOfType<UseMilk>();
         player = GameObject.Find("Player");
+        catVoiceSound = GetComponent<AudioSource>();
     }
 
     public void FlipSprite()
@@ -45,7 +47,8 @@ public class CatAnimation : MonoBehaviour
     }
 
     public void Attacking()
-    { 
+    {
+        catVoiceSound.Play();
         catAnimator.SetBool("isAttacking", true);
         FlipSprite();
     }
