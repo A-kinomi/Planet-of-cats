@@ -9,7 +9,14 @@ public class WinCondition : MonoBehaviour
     [SerializeField] Sprite fixedShipSprite;
     [SerializeField] Image blackPanel;
     private float alpha = 0f;
-    bool isBlackScreen;
+    public bool isBlackScreen;
+    AudioSource bgmAudio;
+    float bgmVolume;
+
+    private void Start()
+    {
+        bgmAudio = GameObject.Find("BGM").GetComponent<AudioSource>();
+    }
 
 
     private void Update()
@@ -39,6 +46,7 @@ public class WinCondition : MonoBehaviour
         {
             alpha += 0.001f;
             blackPanel.color = new Color(0f, 0f, 0f, alpha);
+            bgmAudio.volume -= 0.001f;
         }
 
         if(alpha > 1.0f && isBlackScreen)
