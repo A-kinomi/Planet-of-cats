@@ -65,6 +65,7 @@ public class Telop : MonoBehaviour
     public void SkipMonologue()
     {
         audioBGM.Play();
+        audioBGM.volume = 0.5f;
         SceneManager.LoadScene(1);
     }
 }

@@ -18,7 +18,7 @@ public class PlayerPosition : MonoBehaviour
 
         if (ItemInventory.instance.wasScene3)
         {
-            this.transform.position = new Vector2(-8.5f, 0f);
+            this.transform.position = new Vector2(-7.2f, 0f);
         }
 
         if (ItemInventory.instance.wasScene4)
@@ -28,7 +28,7 @@ public class PlayerPosition : MonoBehaviour
 
         if (ItemInventory.instance.wasScene5)
         {
-            this.transform.position = new Vector2(8f, 0f);
+            this.transform.position = new Vector2(7.2f, 0f);
         }
 
         if(ItemInventory.instance.wasKilled)

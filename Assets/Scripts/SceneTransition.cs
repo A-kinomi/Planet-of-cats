@@ -92,7 +92,22 @@ public class SceneTransition : MonoBehaviour
                 SceneManager.LoadScene(2);
             }
         }
-        
+    }
 
+    public void BackToMenu()
+    {
+        ItemInventory.instance.wasScene1 = false;
+        ItemInventory.instance.wasScene2 = false;
+        ItemInventory.instance.wasScene3 = false;
+        ItemInventory.instance.wasScene4 = false;
+        ItemInventory.instance.wasScene5 = false;
+
+        ItemInventory.instance.hasShipPart1 = false;
+        ItemInventory.instance.hasShipPart2 = false;
+        ItemInventory.instance.hasShipPart3 = false;
+        ItemInventory.instance.hasShipPart4 = false;
+        ItemInventory.instance.hasMilk = false;
+        ItemInventory.instance.hasHint = false;
+        SceneManager.LoadScene(0);
     }
 }

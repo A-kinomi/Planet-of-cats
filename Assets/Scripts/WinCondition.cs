@@ -44,9 +44,9 @@ public class WinCondition : MonoBehaviour
     {
         if(alpha < 1.0f && isBlackScreen)
         {
-            alpha += 0.001f;
+            alpha += 0.5f * Time.deltaTime;
             blackPanel.color = new Color(0f, 0f, 0f, alpha);
-            bgmAudio.volume -= 0.001f;
+            bgmAudio.volume -= 0.3f * Time.deltaTime;
         }
 
         if(alpha > 1.0f && isBlackScreen)
