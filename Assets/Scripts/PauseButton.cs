@@ -25,6 +25,18 @@ public class PauseButton : MonoBehaviour
     public void Exit()
     {
         Time.timeScale = 1;
+        ItemInventory.instance.wasScene1 = false;
+        ItemInventory.instance.wasScene2 = false;
+        ItemInventory.instance.wasScene3 = false;
+        ItemInventory.instance.wasScene4 = false;
+        ItemInventory.instance.wasScene5 = false;
+
+        ItemInventory.instance.hasShipPart1 = false;
+        ItemInventory.instance.hasShipPart2 = false;
+        ItemInventory.instance.hasShipPart3 = false;
+        ItemInventory.instance.hasShipPart4 = false;
+        ItemInventory.instance.hasMilk = false;
+        ItemInventory.instance.hasHint = false;
         Destroy(bgm);
         SceneManager.LoadScene(0);
     }
