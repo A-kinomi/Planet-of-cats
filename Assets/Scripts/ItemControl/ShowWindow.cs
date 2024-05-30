@@ -22,8 +22,6 @@ public class ShowWindow : MonoBehaviour
     {
         itemWindow = FindObjectOfType<ItemInventory>();
         SwhichItemWIndow();
-
-        shipPart = GameObject.Find("ShipParts");
     }
 
     void SwhichItemWIndow()

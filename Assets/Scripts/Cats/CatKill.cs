@@ -32,7 +32,7 @@ namespace Cats
 
         public void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.tag == "Player")
+            if (collision.tag == "Player" && !blackPanel.enabled)
             {
                 playerAnimation.isKilled = true;
                 ItemInventory.instance.wasKilled = true;

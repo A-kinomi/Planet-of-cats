@@ -7,6 +7,7 @@ public class SceneTransition : MonoBehaviour
 {
     GameObject player;
     PlayerAnimation playerAnimation;
+    GameObject bgm;
 
     private void Start()
     {
@@ -15,6 +16,8 @@ public class SceneTransition : MonoBehaviour
         {
             playerAnimation = player.GetComponent<PlayerAnimation>();
         }
+
+        bgm = GameObject.Find("BGM");
     }
 
     public void StartButton()
@@ -96,6 +99,7 @@ public class SceneTransition : MonoBehaviour
 
     public void BackToMenu()
     {
+
         ItemInventory.instance.wasScene1 = false;
         ItemInventory.instance.wasScene2 = false;
         ItemInventory.instance.wasScene3 = false;
@@ -108,6 +112,7 @@ public class SceneTransition : MonoBehaviour
         ItemInventory.instance.hasShipPart4 = false;
         ItemInventory.instance.hasMilk = false;
         ItemInventory.instance.hasHint = false;
+        Destroy(bgm);
         SceneManager.LoadScene(0);
     }
 }
