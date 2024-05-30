@@ -957,7 +957,7 @@ Transform:
   m_GameObject: {fileID: 499045468}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.3876, y: -0.311, z: -0.08733134}
+  m_LocalPosition: {x: 14.48, y: -0.311, z: -0.08733134}
   m_LocalScale: {x: 0.17686576, y: 9.838838, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2056,12 +2056,6 @@ MonoBehaviour:
   hasShipPart4: 0
   hasMilk: 0
   hasHint: 0
-  wasScene1: 0
-  wasScene2: 0
-  wasScene3: 0
-  wasScene4: 0
-  wasScene5: 0
-  wasKilled: 0
 --- !u!4 &1224731655
 Transform:
   m_ObjectHideFlags: 0
@@ -2261,8 +2255,8 @@ Transform:
   m_GameObject: {fileID: 1342531762}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8631, y: -4.7243, z: -0.08733134}
-  m_LocalScale: {x: 5.572999, y: 1.6903398, z: 1}
+  m_LocalPosition: {x: -0.8631, y: -4.604, z: -0.08733134}
+  m_LocalScale: {x: 5.572999, y: 1.9308752, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 733704641}
@@ -2854,8 +2848,8 @@ Camera:
   m_GameObject: {fileID: 1573180774}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

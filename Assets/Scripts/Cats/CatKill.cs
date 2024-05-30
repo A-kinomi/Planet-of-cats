@@ -10,6 +10,7 @@ namespace Cats
     public class CatKill : MonoBehaviour
     {
         PlayerAnimation playerAnimation;
+        ConditionControl conditionControl;
         [SerializeField] Image blackPanel;
         float alpha;
         bool isKilled;
@@ -17,6 +18,7 @@ namespace Cats
         private void Start()
         {
             playerAnimation = FindObjectOfType<PlayerAnimation>();
+            conditionControl = GameObject.Find("ConditonControl").GetComponent<ConditionControl>();
             blackPanel.color = new Color(0f, 0f, 0f, 0f);
             blackPanel.enabled = false;
         }
@@ -32,10 +34,10 @@ namespace Cats
 
         public void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.tag == "Player")
+            if (collision.tag == "Player" && !blackPanel.enabled)
             {
                 playerAnimation.isKilled = true;
-                ItemInventory.instance.wasKilled = true;
+                conditionControl.wasKilled = true;
                 blackPanel.enabled = true;
                 StartCoroutine(Killed());
             }

@@ -31,7 +31,6 @@ namespace Cats
                 if (Vector2.Distance(transform.position, targetPosition) < 0.1)
                 {
                     SwitchDirection();
-                    // TODO: sleep for a while?
                 }
             }
         }
