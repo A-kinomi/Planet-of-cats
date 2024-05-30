@@ -8,6 +8,7 @@ public class SceneTransition : MonoBehaviour
     GameObject player;
     PlayerAnimation playerAnimation;
     GameObject bgm;
+    ConditionControl conditionControl;
 
     private void Start()
     {
@@ -18,6 +19,7 @@ public class SceneTransition : MonoBehaviour
         }
 
         bgm = GameObject.Find("BGM");
+        conditionControl = GameObject.Find("ConditonControl").GetComponent<ConditionControl>();
     }
 
     public void StartButton()
@@ -31,12 +33,12 @@ public class SceneTransition : MonoBehaviour
         {
             if (this.tag == "Scene1to2")
             {
-                ItemInventory.instance.wasScene1 = true;
-                ItemInventory.instance.wasScene2 = false;
-                ItemInventory.instance.wasScene3 = false;
-                ItemInventory.instance.wasScene4 = false;
-                ItemInventory.instance.wasScene5 = false;
-                ItemInventory.instance.wasKilled = false;
+                conditionControl.wasScene1 = true;
+                conditionControl.wasScene2 = false;
+                conditionControl.wasScene3 = false;
+                conditionControl.wasScene4 = false;
+                conditionControl.wasScene5 = false;
+                conditionControl.wasKilled = false;
                 SceneManager.LoadScene(2);
             }
 
@@ -57,41 +59,41 @@ public class SceneTransition : MonoBehaviour
 
             if (this.tag == "Scene2to1")
             {
-                ItemInventory.instance.wasScene1 = false;
-                ItemInventory.instance.wasScene2 = true;
-                ItemInventory.instance.wasScene3 = false;
-                ItemInventory.instance.wasScene4 = false;
-                ItemInventory.instance.wasScene5 = false;
+                conditionControl.wasScene1 = false;
+                conditionControl.wasScene2 = true;
+                conditionControl.wasScene3 = false;
+                conditionControl.wasScene4 = false;
+                conditionControl.wasScene5 = false;
                 SceneManager.LoadScene(1);
             }
 
             if (this.tag == "Scene3to2")
             {
-                ItemInventory.instance.wasScene1 = false;
-                ItemInventory.instance.wasScene2 = false;
-                ItemInventory.instance.wasScene3 = true;
-                ItemInventory.instance.wasScene4 = false;
-                ItemInventory.instance.wasScene5 = false;
+                conditionControl.wasScene1 = false;
+                conditionControl.wasScene2 = false;
+                conditionControl.wasScene3 = true;
+                conditionControl.wasScene4 = false;
+                conditionControl.wasScene5 = false;
                 SceneManager.LoadScene(2);
             }
 
             if (this.tag == "Scene4to2")
             {
-                ItemInventory.instance.wasScene1 = false;
-                ItemInventory.instance.wasScene2 = false;
-                ItemInventory.instance.wasScene3 = false;
-                ItemInventory.instance.wasScene4 = true;
-                ItemInventory.instance.wasScene5 = false;
+                conditionControl.wasScene1 = false;
+                conditionControl.wasScene2 = false;
+                conditionControl.wasScene3 = false;
+                conditionControl.wasScene4 = true;
+                conditionControl.wasScene5 = false;
                 SceneManager.LoadScene(2);
             }
 
             if (this.tag == "Scene5to2")
             {
-                ItemInventory.instance.wasScene1 = false;
-                ItemInventory.instance.wasScene2 = false;
-                ItemInventory.instance.wasScene3 = false;
-                ItemInventory.instance.wasScene4 = false;
-                ItemInventory.instance.wasScene5 = true;
+                conditionControl.wasScene1 = false;
+                conditionControl.wasScene2 = false;
+                conditionControl.wasScene3 = false;
+                conditionControl.wasScene4 = false;
+                conditionControl.wasScene5 = true;
                 SceneManager.LoadScene(2);
             }
         }
@@ -100,11 +102,11 @@ public class SceneTransition : MonoBehaviour
     public void BackToMenu()
     {
 
-        ItemInventory.instance.wasScene1 = false;
-        ItemInventory.instance.wasScene2 = false;
-        ItemInventory.instance.wasScene3 = false;
-        ItemInventory.instance.wasScene4 = false;
-        ItemInventory.instance.wasScene5 = false;
+        conditionControl.wasScene1 = false;
+        conditionControl.wasScene2 = false;
+        conditionControl.wasScene3 = false;
+        conditionControl.wasScene4 = false;
+        conditionControl.wasScene5 = false;
 
         ItemInventory.instance.hasShipPart1 = false;
         ItemInventory.instance.hasShipPart2 = false;
@@ -113,6 +115,7 @@ public class SceneTransition : MonoBehaviour
         ItemInventory.instance.hasMilk = false;
         ItemInventory.instance.hasHint = false;
         Destroy(bgm);
+        Destroy(conditionControl.gameObject);
         SceneManager.LoadScene(0);
     }
 }

@@ -8,11 +8,13 @@ public class PauseButton : MonoBehaviour
     AudioSource playerWalkSound;
     GameObject bgm;
     [SerializeField] GameObject pausePanel;
+    ConditionControl conditionControl;
 
     private void Start()
     {
         playerWalkSound = GameObject.Find("Player").GetComponent<AudioSource>();
         bgm = GameObject.Find("BGM");
+        conditionControl = GameObject.Find("ConditonControl").GetComponent<ConditionControl>();
     }
 
     public void PauseGame()
@@ -25,11 +27,11 @@ public class PauseButton : MonoBehaviour
     public void Exit()
     {
         Time.timeScale = 1;
-        ItemInventory.instance.wasScene1 = false;
-        ItemInventory.instance.wasScene2 = false;
-        ItemInventory.instance.wasScene3 = false;
-        ItemInventory.instance.wasScene4 = false;
-        ItemInventory.instance.wasScene5 = false;
+        conditionControl.wasScene1 = false;
+        conditionControl.wasScene2 = false;
+        conditionControl.wasScene3 = false;
+        conditionControl.wasScene4 = false;
+        conditionControl.wasScene5 = false;
 
         ItemInventory.instance.hasShipPart1 = false;
         ItemInventory.instance.hasShipPart2 = false;
@@ -38,6 +40,7 @@ public class PauseButton : MonoBehaviour
         ItemInventory.instance.hasMilk = false;
         ItemInventory.instance.hasHint = false;
         Destroy(bgm);
+        Destroy(conditionControl.gameObject);
         SceneManager.LoadScene(0);
     }
 

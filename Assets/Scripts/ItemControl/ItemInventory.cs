@@ -11,13 +11,6 @@ public class ItemInventory : MonoBehaviour
     public bool hasMilk = false;
     public bool hasHint = false;
 
-    public bool wasScene1;
-    public bool wasScene2;
-    public bool wasScene3;
-    public bool wasScene4;
-    public bool wasScene5;
-    public bool wasKilled;
-
     public static ItemInventory instance;
     
     void Awake()

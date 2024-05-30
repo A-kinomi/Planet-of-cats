@@ -10,16 +10,18 @@ public class PickUpItems : MonoBehaviour
     private WaitForSeconds showWindowDuration;
     [SerializeField] GameObject thisItemWindow;
     [SerializeField] ItemTypeEnum itemType;
+    ConditionControl conditionControl;
 
 
     private void Start()
     {
         showWindowDuration = new WaitForSeconds(pickUpDuration);
+        conditionControl = GameObject.Find("ConditonControl").GetComponent<ConditionControl>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && !ItemInventory.instance.wasKilled)
+        if (collision.tag == "Player" && !conditionControl.wasKilled)
         {
             switch (this.itemType)
             {
